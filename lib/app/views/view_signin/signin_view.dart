@@ -3,14 +3,14 @@ import 'package:chat_app/core/widgets/button_widget.dart';
 import 'package:chat_app/core/widgets/text_field_widget.dart';
 import 'package:flutter/material.dart';
 
-class LoginView extends StatefulWidget {
-  const LoginView({super.key});
+class SignInView extends StatefulWidget {
+  const SignInView({super.key});
 
   @override
-  State<LoginView> createState() => _LoginViewState();
+  State<SignInView> createState() => _SignInViewState();
 }
 
-class _LoginViewState extends State<LoginView> {
+class _SignInViewState extends State<SignInView> {
   //for controller
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();

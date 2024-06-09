@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 class ButtonWidget extends StatelessWidget {
   final VoidCallback onTab;
   final String text;
-  const ButtonWidget({super.key, required this.onTab, required this.text});
+  final Color color;
+  const ButtonWidget(
+      {super.key,
+      required this.onTab,
+      required this.text,
+      this.color = Colors.blue});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +23,7 @@ class ButtonWidget extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
-              color: Colors.blue),
+              color: color),
           child: Text(
             text,
             style: const TextStyle(
