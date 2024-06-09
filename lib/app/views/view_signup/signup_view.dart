@@ -1,3 +1,4 @@
+import 'package:chat_app/app/views/view_signin/signin_view.dart';
 import 'package:chat_app/core/widgets/button_widget.dart';
 import 'package:chat_app/core/widgets/text_field_widget.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +62,14 @@ class _SignUpViewState extends State<SignUpView> {
                           fontSize: 16,
                         )),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignInView(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         " Sign In",
                         style: TextStyle(
