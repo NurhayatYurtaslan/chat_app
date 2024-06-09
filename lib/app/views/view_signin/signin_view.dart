@@ -1,3 +1,4 @@
+import 'package:chat_app/app/views/view_signup/signup_view.dart';
 import 'package:chat_app/core/widgets/button_widget.dart';
 import 'package:chat_app/core/widgets/text_field_widget.dart';
 import 'package:flutter/material.dart';
@@ -68,11 +69,18 @@ class _LoginViewState extends State<LoginView> {
                           fontSize: 16,
                         )),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignUpView(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         " SignUp",
-                        style:
-                            TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                     ),
                   ],
