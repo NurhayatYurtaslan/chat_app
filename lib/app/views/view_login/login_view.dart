@@ -1,3 +1,4 @@
+import 'package:chat_app/core/widgets/button_widget.dart';
 import 'package:chat_app/core/widgets/text_field_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -51,6 +52,27 @@ class _LoginViewState extends State<LoginView> {
                 ),
               ),
             ),
+            ButtonWidget(onTab: () {}, text: "Log In"),
+            SizedBox(
+              height: height / 15,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text("Don't have an account?",
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    )),
+                GestureDetector(
+                  onTap: () {},
+                  child: const Text(
+                    " SignUp",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       )),
